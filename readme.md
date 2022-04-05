@@ -12,8 +12,22 @@ let-env CC = clang
 ### meson build
 
 ```powershell
-meson setup build
+meson build
 ```
 
 * here ./build is directory which will be created automatically for keep all build files
 
+### compile
+
+```powershell
+cd build
+meson compile
+#or
+ninja
+```
+
+### run
+
+```powershell
+./build/simple.exe
+```
